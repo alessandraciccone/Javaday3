@@ -53,27 +53,11 @@ public class Commerce {
     // Classe Carrello
     public static class Carrello {
         private Cliente clienteAssociato;
-        private Articolo[] articoli = new Articolo[20];
-        private int[] quantita = new int[20];
+        private Articolo[] articoli = new Articolo[15];
+        private int[] quantita = new int[5];
         private int size = 0;
         private double totale = 0.0;
 
-        public Carrello(Cliente clienteAssociato) {
-            this.clienteAssociato = clienteAssociato;
-        }
 
-        public Cliente getClienteAssociato() { return clienteAssociato; }
-        public double getTotale() { return totale; }
-        public Articolo[] getArticoli() { return articoli; }
-        public int[] getQuantita() { return quantita; }
-        public int getSize() { return size; }
-
-        public void aggiungiArticolo(Articolo articolo, int qta) {
-
-        }
-
-        private int trovaIndiceArticolo(Articolo a) {
-            return -1;
-        }
     }
 }

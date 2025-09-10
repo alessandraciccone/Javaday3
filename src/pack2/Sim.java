@@ -32,9 +32,7 @@ public class Sim {
 
     // Metodo per aggiungere una chiamata
     public void aggiungiChiamata(String numeroChiamato, int durataMinuti) {
-        if (chiamate.size() == 5) {
-            chiamate.removeFirst(); // rimuove la più vecchia
-        }
+
         chiamate.add(new Chiamata(numeroChiamato, durataMinuti));
     }
 

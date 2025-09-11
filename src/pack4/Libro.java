@@ -2,17 +2,17 @@ package pack4;
 import java.util.Random;
 
 public class Libro {
-    private double id;
+    private int id;
     private String titolo;
     private String autore;
-    private double numPagine;
+    private int numPagine;
 
 
     public Libro(double id, String titolo, String autore, double numPagine) {
-        this.id = id;
+        this.id = (int) id;
         this.titolo = titolo;
         this.autore = autore;
-        this.numPagine = numPagine;
+        this.numPagine = (int) numPagine;
     }
 
     public Libro(String titolo, String autore, double numPagine) {
@@ -20,7 +20,7 @@ public class Libro {
         this.id = rand.nextInt(1000);
         this.titolo = titolo;
         this.autore = autore;
-        this.numPagine = 0;
+        this.numPagine = (int) numPagine;
     }
 
     public void stampaLibro() {

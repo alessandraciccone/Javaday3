@@ -6,9 +6,9 @@ public class Main6 {
         Animals A2 = new Animals( "Gianna", AnimaliFattoria.MUCCA);
         A1.description();
         A2.description();
-        A1.setNome("Panna");
+        A1.setNome("Polpetta");
         A1.description();
-        A2.setNome("Felice");
+        A2.setNome("Felix");
         A2.description();
     }
 }

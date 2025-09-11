@@ -1,7 +1,7 @@
 package pack8;
 
 public class Playlist {
-    private Songs[] canzone;
+    private final Songs[] canzone; //il final lo ha suggerito l'editor
 
     public Playlist() {
         canzone = new Songs[3];
@@ -12,22 +12,16 @@ public class Playlist {
 
     public void TitoloCanzone() {
         System.out.println("La mia playlist:");
-        for (Songs s : canzone) {
-            System.out.println("- " + s.getTitolo());
-        }
     }
 
     public void DurataCazone() {
-        System.out.println("Le canzoni durano rispettivamente:");
-        for (Songs s : canzone) {
-            System.out.println("- " + s.getSecondi() + " secondi");
-        }
+
     }
 
     public void NomeArtista() {
-        System.out.println("Gli artisti sono ");
+
         for (Songs s : canzone) {
-            System.out.println("- " + s.getArtista());
+            System.out.println("- " + s.getTitolo() + " di " + s.getArtista() + " e dura " + s.getSecondi() +" secondi");
         }
     }
 }
